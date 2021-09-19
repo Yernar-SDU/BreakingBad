@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.mvvm_template.ui.character_details.CharacterDetailsViewModel" />
+
+        <variable
+            name="character"
+            type="com.example.mvvm_template.model.Character" />
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/birthday"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/occupation"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nickname"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appearance"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/portrayed"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/better_call_saul_appearance"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(character.name)}"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(character.birthday)}"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(character.occupation)}"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(character.status)}"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(character.nickname)}"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(character.appearance)}"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(character.portrayed)}"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(character.category)}"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(character.better_call_saul_appearance)}"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</layout>

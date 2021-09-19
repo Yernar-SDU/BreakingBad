@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_tab"
+    app:startDestination="@id/fragment_home">
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.mvvm_template.ui.home.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/to_character_details"
+            app:destination="@id/character_details">
+            <argument
+                android:name="character_id"
+                app:argType="integer"/>
+        </action>
+
+
+        <action
+            android:id="@+id/to_loading_dialog_fragment"
+            app:destination="@id/loading_dialog_fragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/character_details"
+        android:name="com.example.mvvm_template.ui.character_details.CharacterFragment"
+        tools:layout="@layout/fragment_character_details">
+        <argument
+            android:name="character_id"
+            app:argType="integer"/>
+    </fragment>
+
+    <dialog
+        android:id="@+id/loading_dialog_fragment"
+        android:name="com.example.mvvm_template.ui.loading_dialog.LoadingDialogFragment"/>
+
+</navigation>

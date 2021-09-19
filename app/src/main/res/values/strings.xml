@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BreakingBad</string>
+    <string name="socket_timeout_exception">Time out</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="name">Name</string>
+    <string name="birthday">Birthday</string>
+    <string name="occupation">Occupation</string>
+    <string name="better_call_saul_appearance">better_call_saul_appearance</string>
+    <string name="category">Category</string>
+    <string name="portrayed">Portrayed</string>
+    <string name="appearance">Appearance</string>
+    <string name="nickname">Nickname</string>
+    <string name="status">Status</string>
+</resources>
